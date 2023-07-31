@@ -1,0 +1,19 @@
+{
+  "name": "langchain-ts-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx -r dotenv/config src/index.ts"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^0.1.6",
+    "langchain": "^0.0.120",
+    "openai": "^3.3.0",
+    "tsx": "^3.12.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "typescript": "^5.1.6"
+  }
+}
