@@ -4,6 +4,11 @@ export const run = async () => {
     "https://www.youtube.com/watch?v=e8qJsk1j2zE"
   );
 
-  console.log(script.length);
-  
+  // script is an array of object with text and time, iterate it and get the text
+  const joinedTranscription = script
+    .map((item) => item.text)
+    .join(" ")
+    .replaceAll("\n", " ");
+
+  console.log(joinedTranscription);
 };
